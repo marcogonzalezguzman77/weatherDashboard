@@ -1,12 +1,8 @@
-#  📆 Work Day Scheduler 
+#  👓 Weather Dashboard 
 
 ## 📄 Description
 
-This is a calendar application where you can save events for each hour of the day. This app use HTML, CSS, [JQuery](https://jquery.com/), [Bootstrap](https://getbootstrap.com/) and [Moment.js](https://momentjs.com/).
-
-As an user, you can add important events to a daily planner so you can manage your time effectively.
-
-Gray background is past activities, Red Background is present activities and Green Background is future activities.
+This is a Weather Dashboard application where you can see the weather outlook for multiple cities. You just have to search a city and will see current and future conditions, the city will be added to the search history.
 
 
 ## ⚙⚙ Web Page Functionality
@@ -16,4 +12,4 @@ The following animation shows the quiz web application's appearance and function
 ![portfolio demo](./assets/images/workDayScheduler.gif)
 
 
-You can watch the web page on the next link [Work Day Scheduler](https://marcogonzalezguzman77.github.io/workDayScheduler/) for test.
+You can watch the web page on the next link [Work Day Scheduler](https://marcogonzalezguzman77.github.io/weatherDashboard/) for test.
