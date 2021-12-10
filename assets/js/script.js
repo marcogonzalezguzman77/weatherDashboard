@@ -88,7 +88,7 @@ var getWeatherValuess = function (cityValue) {
     cityTitleEl.html('');
     var weatherIcon = data.current.weather[0].icon;
     //console.log('Weather icon value: ',weatherIcon);
-    cityTitleEl.html(actualCity+' ('+actualDate+')'+ '<img src="http://openweathermap.org/img/wn/'+ weatherIcon +'@2x.png" alt="Weather Img" widht="50" height="50"></img>');
+    cityTitleEl.html(actualCity+' ('+actualDate+')'+ '<img src="https://openweathermap.org/img/wn/'+ weatherIcon +'@2x.png" alt="Weather Img" widht="50" height="50"></img>');
 
     //*****display weather values in actual day Card*****
     actualValuesUlEl.text(''); //delete actual values of ul    
@@ -157,7 +157,7 @@ var getWeatherValuess = function (cityValue) {
         var dayDate  = new Date(dayDateTimestamp).toLocaleDateString("en-US"); 
         var weatherIconDay = data.daily[i].weather[0].icon;
         //console.log('Weather day icon value: ',weatherIconDay);
-        h4El.html(dayDate+ '<img src="http://openweathermap.org/img/wn/'+ weatherIcon +'@2x.png" alt="Weather Img" widht="40" height="40"></img>');
+        h4El.html(dayDate+ '<img src="https://openweathermap.org/img/wn/'+ weatherIcon +'@2x.png" alt="Weather Img" widht="40" height="40"></img>');
 
         //h4El.text(dayDate);
         divCardEl.append(h4El);
