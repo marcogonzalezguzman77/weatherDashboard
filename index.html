@@ -25,46 +25,50 @@
           <h3>Search for a city:</h3>
           <form>
             <div class="form-group">       
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter a city">              
+              <input type="text" class="form-control" id="input-City" placeholder="Enter a city">              
             </div> 
             <div class="d-grid gap-2" style="margin-top:2px;">
-              <button class="btn btn-success" type="button">Search</button>              
+              <button id="submit" class="btn btn-success">Search</button>              
             </div> 
             
           </form>
 
         </div>
             
-        <div class="d-grid gap-2" style="margin-top:10px; border-top:solid; padding-top:10px;">
-          <button class="btn btn-secondary" type="button">City A</button>
-          <button class="btn btn-secondary" type="button">City B</button>
-          <button class="btn btn-secondary" type="button">City C</button>
-          <button class="btn btn-secondary" type="button">City D</button>                     
+        <div id="city-Buttons" class="d-grid gap-2" style="margin-top:10px; border-top:solid; padding-top:10px;">
+          <button data-city="cityA" class="btn btn-secondary" type="button">City A</button>
+          <button data-city="cityB" class="btn btn-secondary" type="button">City B</button>
+          <button data-city="cityC" class="btn btn-secondary" type="button">City C</button>
+          <button data-city="cityD" class="btn btn-secondary" type="button">City D</button>
+          <button id="delete-History" class="btn btn-dark" type="button">Delete History</button>                    
         </div>
        
       </div>     
       
-      
+      <!-- Actual Weather -->
       <div class="col-12 col-md-8">
         <section class="row" style="margin-top:4px;">
-          <div class="card">
-              <h2>Ciudad (Fecha)</h2>
-              <ul class="li-weather">
+          <div id="actual-Day-Card" class="card bg-info" style="padding-bottom:10px;">
+              <h2><span id="city-Title">Ciudad (Fecha)<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Img" widht="50" height="50"></span>
+                
+              </h2>
+              <ul id="actual-Values" class="li-weather">
                 <li>Temp: XX.XX &#176F </li>
                 <li>Wind: X.XX MPH </li>
                 <li>Humidity: XX % </li>
-                <li>UV Index: X.XX </li>
+                <li>UV Index: <span class="bg-uv bg-favorable">X.XX</span></li>
               </ul>
           </div>
         </section>
 
+        <!-- 5 days future Weather -->
         <h3>5 Days forecast:</h3>
-        <section class="row justify-content-around">
+        <section id="five-Days-Card" class="row justify-content-around">
           
           <div class="col-12 col-sm-6 col-lg-4 mb-3">
             <div class="card">
-              <h4 class="card-header">
-                Day 1
+              <h4 class="card-header bg-blue text-white">
+                Day 1 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Img" widht="40" height="40">
               </h4>
               <div class="card-body">              
                 <ul class="li-weather">
@@ -79,8 +83,8 @@
           
           <div class="col-12 col-sm-6 col-lg-4 mb-3">
             <div class="card">
-              <h4 class="card-header">
-                Day 1
+              <h4 class="card-header bg-blue text-white">
+                Day 2 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Img" widht="40" height="40">
               </h4>
               <div class="card-body">              
                 <ul class="li-weather">
@@ -95,8 +99,8 @@
           
           <div class="col-12 col-sm-6 col-lg-4 mb-3">
             <div class="card">
-              <h4 class="card-header">
-                Day 1
+              <h4 class="card-header bg-blue text-white">
+                Day 3 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Img" widht="40" height="40">
               </h4>
               <div class="card-body">              
                 <ul class="li-weather">
@@ -111,8 +115,8 @@
 
           <div class="col-12 col-sm-6 col-lg-4 mb-3">
             <div class="card">
-              <h4 class="card-header">
-                Day 1
+              <h4 class="card-header bg-blue text-white">
+                Day 4 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Img" widht="40" height="40">
               </h4>
               <div class="card-body">              
                 <ul class="li-weather">
@@ -127,8 +131,8 @@
 
           <div class="col-12 col-sm-6 col-lg-4 mb-3">
             <div class="card">
-              <h4 class="card-header">
-                Day 1
+              <h4 class="card-header bg-blue text-white">
+                Day 5 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Img" widht="40" height="40">
               </h4>
               <div class="card-body">              
                 <ul class="li-weather">
@@ -148,6 +152,7 @@
 
     
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 

@@ -9,7 +9,7 @@ This is a Weather Dashboard application where you can see the weather outlook fo
 
 The following animation shows the quiz web application's appearance and functionality:
 
-![portfolio demo](./assets/images/workDayScheduler.gif)
+![portfolio demo](./assets/images/weatherDashboard.gif)
 
 
 You can watch the web page on the next link [Weather Dashboard](https://marcogonzalezguzman77.github.io/weatherDashboard/) for test.
