@@ -7,9 +7,9 @@ This is a Weather Dashboard application where you can see the weather outlook fo
 
 ## ⚙⚙ Web Page Functionality
 
-The following animation shows the quiz web application's appearance and functionality:
+The following animation shows the weather dashboard application's appearance and functionality:
 
-![portfolio demo](./assets/images/weatherDashboard.gif)
+![Weather Dashboard Demo](./assets/images/weatherDashboard.gif)
 
 
 You can watch the web page on the next link [Weather Dashboard](https://marcogonzalezguzman77.github.io/weatherDashboard/) for test.
